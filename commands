@@ -1,0 +1,11 @@
+# Create output folder
+mkdir inria_video
+
+# Run with localization
+python inria_test_v2.py --source satelllite-img.jpg --use_localization --fps 3
+
+# Run with faster settings
+python inria_test_v2.py --source satelllite-img.jpg --use_localization --roi_size 300 --fps 5 --crop_size 100
+
+# Run without localization (original behavior)
+python inria_test_v2.py --source satelllite-img.jpg
